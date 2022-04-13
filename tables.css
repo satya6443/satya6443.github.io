@@ -1,0 +1,28 @@
+
+.center{
+    text-align: center;
+    }
+    .right{
+        text-align: right;
+    }
+    .bottom{
+        position:relative;
+        margin:50px;
+        width: 60%;
+        left:20%;
+    }
+    table{
+        border: 1px solid black;
+        border-spacing: 1px;
+    }
+    td{
+        padding:1px;
+        border:1px solid black;
+        height: 10px;
+    }
+    .green{
+        background-color: green;
+    }
+    .red{
+        background-color: red;
+    }
