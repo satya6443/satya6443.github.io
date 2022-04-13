@@ -1,0 +1,145 @@
+@font-face{
+    font-family: myFirstFont;
+    src: url(ShadowsIntoLight-Regular.ttf);
+  }
+  @font-face {
+      font-family: mySecondFont;
+      src: url(DancingScript-VariableFont_wght.ttf);
+  }
+*{
+    font-family: myFirstFont;
+    box-sizing: border-box;
+}
+ul{
+   list-style-type:none; 
+}
+li{
+    display: inline;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 27px;
+    padding:20px;
+}
+i{
+    position: absolute;
+    left:470px;
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    color:rgb(255, 0, 119);
+}
+#items{
+    display: inline;
+}
+li a:hover{
+    transform: scale(2, 0.5);
+    color:rgb(255, 196, 0);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 74% 25%;
+    grid-template-rows: 70px 500px 100px;
+    background-color:white ;
+}
+.Menu{
+    grid-area: 1/1/1/3;
+    
+    /*background-color: rgb(201, 105, 8);*/
+    background-image: url("images/menuImg.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color:rgb(249, 182, 182);
+    border: 1px solid rgb(232, 93, 93);
+}
+#logo{
+    display: block;
+    margin-left: 140px;
+    font-size: 70px;
+    font-weight: 5px;
+    font-family: mySecondFont;
+}
+.y{
+    color: yellow;
+}
+.b{
+    color: blue;
+}
+.p{
+    color: pink;
+}
+.w{
+    color:white;
+}
+.content{
+    
+    grid-area:2/1/2/2;
+    border: 1px solid rgb(232, 93, 93);
+    background-image: url("images/bg1image.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+}
+.slidebar{
+    grid-area:2/2/2/2;
+     
+    background-image: url("images/slideImage.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid rgb(232, 93, 93);
+}
+.footer{
+    grid-area:3/1/3/3;
+    background-color: black;
+    text-align: center;
+    color: white;
+    border: 1px solid rgb(232, 93, 93)
+}
+.items{
+    position: relative;
+    padding:5px;
+    top:50px;
+}
+.it{
+    display: block;
+}
+form{
+    position: relative;
+    left:340px;
+    top:150px;
+}
+input{
+    width: 500px;
+    height: 40px;
+    border-radius: 1em;
+}
+.it1{
+    display: block;
+    font-size: 20px;
+}
+@media screen and (max-width:840px){
+    .grid{
+    display: grid;
+    grid-template-columns: 74% 25%;
+    grid-template-rows: 70px  80px 500px 100px;
+    grid-gap: 2px;
+    background-color:white ;
+    }
+    .content{
+        grid-area: 3/1/3/3;
+        
+    }
+    .slidebar{
+        grid-area:2/1/2/3;
+}
+   .footer{
+       grid-area:4/1/4/3;
+   }
+   .it1{
+       display: inline;
+   }
+    form{
+        left:120px;
+    }
+    }
